@@ -29,6 +29,9 @@ gem 'devise'
 # haml support
 gem "haml-rails", "~> 0.8"
 
+# can can support
+gem 'cancancan', '~> 1.10'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
