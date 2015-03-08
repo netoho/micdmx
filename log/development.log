@@ -14953,3 +14953,44 @@ Started GET "/assets/landing_page-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" fo
 
 
 Started GET "/assets/semantic-ui/dist/themes/default/assets/fonts/icons.woff2" for ::1 at 2015-03-07 20:21:32 -0600
+
+
+Started GET "/" for ::1 at 2015-03-07 20:52:36 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by LandingPageController#index as HTML
+  Rendered landing_page/index.html.haml within layouts/application (12.0ms)
+  Rendered shared/_menu.html.haml (2.5ms)
+Completed 200 OK in 467ms (Views: 466.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-3ce948944461f0a8a3f8060b888f10c3.css?body=1" for ::1 at 2015-03-07 20:52:37 -0600
+
+
+Started GET "/assets/custom-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-07 20:52:37 -0600
+
+
+Started GET "/assets/landing_page-b832123416ca9a7d574b9b8c408c21a0.css?body=1" for ::1 at 2015-03-07 20:52:37 -0600
+
+
+Started GET "/assets/semantic-ui/dist/semantic-fbe90e8c72a89e58e21376aa5b35f9b2.css?body=1" for ::1 at 2015-03-07 20:52:37 -0600
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-07 20:52:37 -0600
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-07 20:52:37 -0600
+
+
+Started GET "/assets/semantic-ui/dist/semantic-2225e3890a432fee03c0bba107a915cf.js?body=1" for ::1 at 2015-03-07 20:52:37 -0600
+
+
+Started GET "/assets/home_page-e488d72b58d8714efdb96dc0c5df92d0.js?body=1" for ::1 at 2015-03-07 20:52:37 -0600
+
+
+Started GET "/assets/landing_page-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-07 20:52:37 -0600
+
+
+Started GET "/assets/application-d714585cc2613a8aa75a169c92402fc0.js?body=1" for ::1 at 2015-03-07 20:52:37 -0600
+
+
+Started GET "/assets/semantic-ui/dist/themes/default/assets/fonts/icons.woff2" for ::1 at 2015-03-07 20:52:37 -0600
