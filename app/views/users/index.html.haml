@@ -1,42 +1,36 @@
 .block
   .block-title
-    .block-options.pull-right
-      %a.btn.btn-alt.btn-sm.btn-default{"data-original-title" => "Friend Request", "data-toggle" => "tooltip", :href => "", :title => ""}
-        %i.fa.fa-plus
-      %a.btn.btn-alt.btn-sm.btn-default{"data-original-title" => "Hire", "data-toggle" => "tooltip", :href => "", :title => ""}
-        %i.fa.fa-briefcase
-    %h2
-      Listado
-      %strong Usuarios
-      %small
-        •
-        %i.fa.fa-file-text.text-primary
-        %a{"data-original-title" => "Descargar perfil", "data-toggle" => "tooltip", :href => "javascript:void(0)", :title => ""} Perfiles
-  %table.table.table-borderless.table-striped
-    %tbody
-      %tr
-        %td{:style => "width: 20%;"}
-          %strong Info
-        %td Proin ac nibh rutrum lectus rhoncus eleifend. Sed porttitor pretium venenatis. Suspendisse potenti. Aliquam quis ligula elit. Aliquam at orci ac neque semper dictum. Sed tincidunt scelerisque ligula, et facilisis nulla hendrerit non.
-      %tr
-        %td
-          %strong Founder
-        %td
-          %a{:href => "javascript:void(0)"} Company Inc
-      %tr
-        %td
-          %strong Education
-        %td
-          %a{:href => "javascript:void(0)"} University Name
-      %tr
-        %td
-          %strong Projects
-        %td
-          %a.label.label-danger{:href => "javascript:void(0)"} 168
-      %tr
-        %td
-          %strong Best Skills
-        %td
-          %a.label.label-info{:href => "javascript:void(0)"} HTML
-          %a.label.label-info{:href => "javascript:void(0)"} CSS
-          %a.label.label-info{:href => "javascript:void(0)"} Javascript
+    .col-md-12
+      .page-header
+        %h2
+          Lista de 
+          %strong Usuarios
+          %small
+- @users.each do |user|
+  .col-sm-6.col-md-4
+    .widget
+      .widget-advanced
+        .widget-header.text-center.themed-background-dark
+          %h3.widget-content-light
+            =link_to user.name, user, class: "themed-color"
+            %br
+              %small Web Designer
+        .widget-main
+          %a.widget-image-container.animation-hatch{:href => "page_ready_user_profile.php"}
+            =image_tag(user.image, class: "widget-image img-circle")
+          .row.text-center.animation-fadeIn
+            .col-xs-4
+              %h3
+                %strong 140
+                %br
+                  %small Seguidores
+            .col-xs-4
+              %h3
+                %strong 15
+                %br
+                  %small Propuestas
+            .col-xs-4
+              %h3
+                %strong 980
+                %br
+                  %small Colaboraciones
