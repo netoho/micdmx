@@ -1,0 +1,13 @@
+= form_for @project_type, html: { class: "form form-horizontal project_type1" } do |f|
+  .form-group
+    = f.label :project_type, class: 'control-label'
+    .controls
+      = f.text_field :project_type, class: 'form-control', required: true
+    = error_span(@project_type[:project_type])
+  .form-group
+    = f.label :status_id, class: 'control-label'
+    .controls
+      = f.select :status_id, options_from_collection_for_select(Status.all, :id, :name), {}, {class: 'form-control'}
+    = error_span(@project_type[:status_id])
+  = f.submit nil,class: 'btn btn-primary'
+  = link_to t('.cancel', :default => t("helpers.links.cancel")), project_types_path, :class => 'btn btn-default'

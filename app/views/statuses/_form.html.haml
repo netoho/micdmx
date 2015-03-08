@@ -5,9 +5,9 @@
       = f.text_field :name, class: 'form-control', required: true
     = error_span(@status[:name])
   .form-group
-    = f.label :type, class: 'control-label'
+    = f.label :status_type, class: 'control-label'
     .controls
-      = f.text_field :type, class: 'form-control', required: true
-    = error_span(@status[:type])
+      = f.text_field :status_type, class: 'form-control', required: true
+    = error_span(@status[:status_type])
   = f.submit nil,class: 'btn btn-primary'
   = link_to t('.cancel', :default => t("helpers.links.cancel")), statuses_path, :class => 'btn btn-default'
