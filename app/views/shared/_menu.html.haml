@@ -15,8 +15,7 @@
             Iniciar Sesión
           %ul
             %li
-              = link_to "Facebook", user_omniauth_authorize_path(:facebook)
-            %li
-              %a{:href => ""} Twitter
-            %li
-              %a{:href => ""} Foursquare
+              - if current_user
+                = link_to "Salir", destroy_user_session_path, method: :delete
+              - else
+                = link_to "Facebook", user_omniauth_authorize_path(:facebook)

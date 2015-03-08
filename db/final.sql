@@ -67,7 +67,6 @@ CREATE TABLE users
   first_name VARCHAR(30),
   last_name  VARCHAR(40),
   address    VARCHAR(400),
-  email      VARCHAR(80),
   sex        VARCHAR(30),
   facebook   VARCHAR(40),
   twitter    VARCHAR(40),
