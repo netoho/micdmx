@@ -1,0 +1,13 @@
+= form_for @status, html: { class: "form form-horizontal status" } do |f|
+  .form-group
+    = f.label :name, class: 'control-label'
+    .controls
+      = f.text_field :name, class: 'form-control', required: true
+    = error_span(@status[:name])
+  .form-group
+    = f.label :type, class: 'control-label'
+    .controls
+      = f.text_field :type, class: 'form-control', required: true
+    = error_span(@status[:type])
+  = f.submit nil,class: 'btn btn-primary'
+  = link_to t('.cancel', :default => t("helpers.links.cancel")), statuses_path, :class => 'btn btn-default'

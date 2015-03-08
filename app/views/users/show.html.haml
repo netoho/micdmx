@@ -3,41 +3,49 @@
   %h1=t '.title', :default => model_class.model_name.human.titleize
 
 %p
-  %strong= model_class.human_attribute_name(:email) + ':'
+  %strong= model_class.human_attribute_name(:first_name) + ':'
   %br
-  = @user.email
+  = @user.first_name
 %p
-  %strong= model_class.human_attribute_name(:encrypted_password) + ':'
+  %strong= model_class.human_attribute_name(:last_name) + ':'
   %br
-  = @user.encrypted_password
+  = @user.last_name
 %p
-  %strong= model_class.human_attribute_name(:reset_password_token) + ':'
+  %strong= model_class.human_attribute_name(:address) + ':'
   %br
-  = @user.reset_password_token
+  = @user.address
 %p
-  %strong= model_class.human_attribute_name(:reset_password_sent_at) + ':'
+  %strong= model_class.human_attribute_name(:gender) + ':'
   %br
-  = @user.reset_password_sent_at
+  = @user.gender
 %p
-  %strong= model_class.human_attribute_name(:remember_created_at) + ':'
+  %strong= model_class.human_attribute_name(:facebook) + ':'
   %br
-  = @user.remember_created_at
+  = @user.facebook
 %p
-  %strong= model_class.human_attribute_name(:current_sign_in_at) + ':'
+  %strong= model_class.human_attribute_name(:twitter) + ':'
   %br
-  = @user.current_sign_in_at
+  = @user.twitter
 %p
-  %strong= model_class.human_attribute_name(:last_sign_in_at) + ':'
+  %strong= model_class.human_attribute_name(:zip) + ':'
   %br
-  = @user.last_sign_in_at
+  = @user.zip
 %p
-  %strong= model_class.human_attribute_name(:current_sign_in_ip) + ':'
+  %strong= model_class.human_attribute_name(:birthday) + ':'
   %br
-  = @user.current_sign_in_ip
+  = @user.birthday
 %p
-  %strong= model_class.human_attribute_name(:last_sign_in_ip) + ':'
+  %strong= model_class.human_attribute_name(:status_id) + ':'
   %br
-  = @user.last_sign_in_ip
+  = @user.status_id
+%p
+  %strong= model_class.human_attribute_name(:name) + ':'
+  %br
+  = @user.name
+%p
+  %strong= model_class.human_attribute_name(:image) + ':'
+  %br
+  = @user.image
 
 
 = link_to t('.back', :default => t("helpers.links.back")), users_path, :class => 'btn btn-default'

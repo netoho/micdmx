@@ -55,7 +55,7 @@ CREATE TABLE projects
   goal                INT,
   goal_time           TIMESTAMP
 );
-CREATE TABLE status
+CREATE TABLE statuses
 (
   id INT PRIMARY KEY NOT NULL,
   name     VARCHAR(30),
@@ -118,16 +118,16 @@ CREATE TABLE expert_reviews
 ALTER TABLE expertices ADD FOREIGN KEY (preference_id) REFERENCES preferences (id);
 ALTER TABLE preferences_projects ADD FOREIGN KEY (preference_id) REFERENCES preferences (id);
 ALTER TABLE preferences_projects ADD FOREIGN KEY (project_id) REFERENCES projects (id);
-ALTER TABLE project_types ADD FOREIGN KEY (status_id) REFERENCES status (id);
+ALTER TABLE project_types ADD FOREIGN KEY (status_id) REFERENCES statuses (id);
 ALTER TABLE projects ADD FOREIGN KEY (project_types_id) REFERENCES project_types (id);
-ALTER TABLE projects ADD FOREIGN KEY (status_id) REFERENCES status (id);
-ALTER TABLE projects ADD FOREIGN KEY (validation_status_id) REFERENCES status (id);
-ALTER TABLE projects ADD FOREIGN KEY (invalidate_type_id) REFERENCES status (id);
+ALTER TABLE projects ADD FOREIGN KEY (status_id) REFERENCES statuses (id);
+ALTER TABLE projects ADD FOREIGN KEY (validation_status_id) REFERENCES statuses (id);
+ALTER TABLE projects ADD FOREIGN KEY (invalidate_type_id) REFERENCES statuses (id);
 ALTER TABLE projects ADD FOREIGN KEY (user_id) REFERENCES users (id);
 ALTER TABLE projects ADD FOREIGN KEY (user_validate_id) REFERENCES users (id);
-ALTER TABLE users ADD FOREIGN KEY (status_id) REFERENCES status (id);
+ALTER TABLE users ADD FOREIGN KEY (status_id) REFERENCES statuses (id);
 ALTER TABLE expert_users ADD FOREIGN KEY (preference_id) REFERENCES preferences (id);
-ALTER TABLE expert_users ADD FOREIGN KEY (status_id) REFERENCES status (id);
+ALTER TABLE expert_users ADD FOREIGN KEY (status_id) REFERENCES statuses (id);
 ALTER TABLE expert_users ADD FOREIGN KEY (user_id) REFERENCES users (id);
 ALTER TABLE users_expertices ADD FOREIGN KEY (expertice_id) REFERENCES expertices (id);
 ALTER TABLE users_expertices ADD FOREIGN KEY (user_id) REFERENCES users (id);
@@ -138,5 +138,5 @@ ALTER TABLE users_profiles ADD FOREIGN KEY (user_id) REFERENCES users (id);
 ALTER TABLE users_projects ADD FOREIGN KEY (project_id) REFERENCES projects (id);
 ALTER TABLE users_projects ADD FOREIGN KEY (user_id) REFERENCES users (id);
 ALTER TABLE expert_reviews ADD FOREIGN KEY (project_id) REFERENCES projects (id);
-ALTER TABLE expert_reviews ADD FOREIGN KEY (status_id) REFERENCES status (id);
+ALTER TABLE expert_reviews ADD FOREIGN KEY (status_id) REFERENCES statuses (id);
 ALTER TABLE expert_reviews ADD FOREIGN KEY (user_id) REFERENCES users (id);

@@ -5,30 +5,34 @@
   %thead
     %tr
       %th= model_class.human_attribute_name(:id)
-      %th= model_class.human_attribute_name(:email)
-      %th= model_class.human_attribute_name(:encrypted_password)
-      %th= model_class.human_attribute_name(:reset_password_token)
-      %th= model_class.human_attribute_name(:reset_password_sent_at)
-      %th= model_class.human_attribute_name(:remember_created_at)
-      %th= model_class.human_attribute_name(:current_sign_in_at)
-      %th= model_class.human_attribute_name(:last_sign_in_at)
-      %th= model_class.human_attribute_name(:current_sign_in_ip)
-      %th= model_class.human_attribute_name(:last_sign_in_ip)
+      %th= model_class.human_attribute_name(:first_name)
+      %th= model_class.human_attribute_name(:last_name)
+      %th= model_class.human_attribute_name(:address)
+      %th= model_class.human_attribute_name(:gender)
+      %th= model_class.human_attribute_name(:facebook)
+      %th= model_class.human_attribute_name(:twitter)
+      %th= model_class.human_attribute_name(:zip)
+      %th= model_class.human_attribute_name(:birthday)
+      %th= model_class.human_attribute_name(:status_id)
+      %th= model_class.human_attribute_name(:name)
+      %th= model_class.human_attribute_name(:image)
       %th= model_class.human_attribute_name(:created_at)
       %th=t '.actions', :default => t("helpers.actions")
   %tbody
     - @users.each do |user|
       %tr
         %td= link_to user.id, user_path(user)
-        %td= user.email
-        %td= user.encrypted_password
-        %td= user.reset_password_token
-        %td= user.reset_password_sent_at
-        %td= user.remember_created_at
-        %td= user.current_sign_in_at
-        %td= user.last_sign_in_at
-        %td= user.current_sign_in_ip
-        %td= user.last_sign_in_ip
+        %td= user.first_name
+        %td= user.last_name
+        %td= user.address
+        %td= user.gender
+        %td= user.facebook
+        %td= user.twitter
+        %td= user.zip
+        %td= user.birthday
+        %td= user.status_id
+        %td= user.name
+        %td= user.image
         %td=l user.created_at
         %td
           = link_to t('.edit', :default => t("helpers.links.edit")), edit_user_path(user), :class => 'btn btn-default btn-xs'

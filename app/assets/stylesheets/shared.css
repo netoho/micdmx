@@ -2,3 +2,7 @@ footer{
   clear: both;
   display:block;
 }
+
+#content {
+    padding-top: 55px;
+}
