@@ -4,5 +4,9 @@ footer{
 }
 
 #content {
-    padding-top: 55px;
+    padding-top: 70px;
+}
+
+.facebook-btn{
+  background: #3b5998;
 }
