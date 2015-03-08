@@ -15,7 +15,7 @@
             Iniciar Sesión
           %ul
             %li
-              %a{:href => ""} Facebook
+              = link_to "Facebook", user_omniauth_authorize_path(:facebook)
             %li
               %a{:href => ""} Twitter
             %li

@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  get 'home/index'
 
   resources :preferences
 
@@ -7,7 +6,7 @@ Rails.application.routes.draw do
   get 'landing_page/index'
   get 'home/index'
 
-  devise_for :users
+  devise_for :users, :controllers => {:omniauth_callbacks => "omniauth_callbacks"}
 
   # resources
   resources 'preferences'
