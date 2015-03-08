@@ -12,6 +12,6 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require semantic-ui
+//= require twitter/bootstrap
 //= require home_page
 //= require_tree .

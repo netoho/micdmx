@@ -33,6 +33,12 @@ gem 'cancancan', '~> 1.10'
 # bower integration
 gem "bower-rails", "~> 0.9.2"
 
+# postgres integration
+gem 'pg', '0.18.1'
+
+# bootstrap integration
+gem "twitter-bootstrap-rails"
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
