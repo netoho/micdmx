@@ -16,6 +16,7 @@ development:
   database: micdmx
   username: micdmx
   password: manager123.
+  host: micdmx.crz0oa49xpve.us-west-2.rds.amazonaws.com
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".

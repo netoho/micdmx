@@ -14953,3 +14953,491 @@ Started GET "/assets/landing_page-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" fo
 
 
 Started GET "/assets/semantic-ui/dist/themes/default/assets/fonts/icons.woff2" for ::1 at 2015-03-07 20:21:32 -0600
+
+
+Started GET "/preferences/1/edit" for ::1 at 2015-03-07 20:31:45 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (87.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PreferencesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPreference Load (78.6ms)[0m  SELECT  "preferences".* FROM "preferences" WHERE "preferences"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered preferences/_form.html.haml (30.8ms)
+  Rendered preferences/edit.html.haml within layouts/application (37.8ms)
+  Rendered shared/_menu.html.haml (1.9ms)
+Completed 200 OK in 879ms (Views: 371.7ms | ActiveRecord: 408.3ms)
+
+
+Started GET "/assets/semantic-ui/dist/semantic-fbe90e8c72a89e58e21376aa5b35f9b2.css?body=1" for ::1 at 2015-03-07 20:31:48 -0600
+
+
+Started GET "/assets/custom-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-07 20:31:48 -0600
+
+
+Started GET "/assets/landing_page-b832123416ca9a7d574b9b8c408c21a0.css?body=1" for ::1 at 2015-03-07 20:31:49 -0600
+
+
+Started GET "/assets/application-3ce948944461f0a8a3f8060b888f10c3.css?body=1" for ::1 at 2015-03-07 20:31:49 -0600
+
+
+Started GET "/assets/scaffolds-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-07 20:31:49 -0600
+
+
+Started GET "/assets/preferences-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-07 20:31:49 -0600
+
+
+Started GET "/assets/home_page-e488d72b58d8714efdb96dc0c5df92d0.js?body=1" for ::1 at 2015-03-07 20:31:49 -0600
+
+
+Started GET "/assets/application-212ff86da9d5dc335166f061d3bdfff5.js?body=1" for ::1 at 2015-03-07 20:31:49 -0600
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-07 20:31:49 -0600
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-07 20:31:49 -0600
+
+
+Started GET "/assets/semantic-ui/dist/semantic-2225e3890a432fee03c0bba107a915cf.js?body=1" for ::1 at 2015-03-07 20:31:49 -0600
+
+
+Started GET "/assets/landing_page-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-07 20:31:49 -0600
+
+
+Started GET "/assets/preferences-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-07 20:31:49 -0600
+
+
+Started GET "/preferences/1/images/logo.png" for ::1 at 2015-03-07 20:31:50 -0600
+
+ActionController::RoutingError (No route matches [GET] "/preferences/1/images/logo.png"):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.1) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/neto/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/neto/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/neto/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/neto/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Users/neto/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (19.5ms)
+  Rendered /Users/neto/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (5.4ms)
+  Rendered /Users/neto/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+  Rendered /Users/neto/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (201.5ms)
+  Rendered /Users/neto/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/_markup.html (1.5ms)
+  Rendered /Users/neto/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/style.css within layouts/inlined_string (0.4ms)
+  Rendered /Users/neto/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.5ms)
+  Rendered /Users/neto/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (0.8ms)
+  Rendered /Users/neto/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/console.js within layouts/javascript (134.1ms)
+  Rendered /Users/neto/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/main.js within layouts/javascript (0.5ms)
+  Rendered /Users/neto/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/error_page.js within layouts/javascript (0.8ms)
+  Rendered /Users/neto/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/index.html (177.1ms)
+
+
+Started GET "/" for ::1 at 2015-03-07 20:31:58 -0600
+Processing by LandingPageController#index as HTML
+  Rendered landing_page/index.html.haml within layouts/application (9.3ms)
+  Rendered shared/_menu.html.haml (0.1ms)
+Completed 200 OK in 136ms (Views: 135.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/semantic-ui/dist/semantic-fbe90e8c72a89e58e21376aa5b35f9b2.css?body=1" for ::1 at 2015-03-07 20:31:58 -0600
+
+
+Started GET "/assets/scaffolds-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-07 20:31:58 -0600
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-07 20:31:58 -0600
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-07 20:31:58 -0600
+
+
+Started GET "/assets/semantic-ui/dist/semantic-2225e3890a432fee03c0bba107a915cf.js?body=1" for ::1 at 2015-03-07 20:31:58 -0600
+
+
+Started GET "/assets/preferences-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-07 20:31:59 -0600
+
+
+Started GET "/assets/landing_page-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-07 20:31:59 -0600
+
+
+Started GET "/assets/preferences-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-07 20:31:59 -0600
+
+
+Started GET "/assets/semantic-ui/dist/themes/default/assets/fonts/icons.woff2" for ::1 at 2015-03-07 20:31:59 -0600
+
+
+Started GET "/" for ::1 at 2015-03-07 20:39:52 -0600
+Processing by LandingPageController#index as HTML
+  Rendered landing_page/index.html.haml within layouts/application (0.2ms)
+  Rendered shared/_menu.html.haml (0.1ms)
+Completed 200 OK in 160ms (Views: 159.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-07 20:39:52 -0600
+
+
+Started GET "/assets/preferences-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-07 20:39:52 -0600
+
+
+Started GET "/assets/application-3ce948944461f0a8a3f8060b888f10c3.css?body=1" for ::1 at 2015-03-07 20:39:52 -0600
+
+
+Started GET "/assets/semantic-ui/dist/semantic-fbe90e8c72a89e58e21376aa5b35f9b2.css?body=1" for ::1 at 2015-03-07 20:39:52 -0600
+
+
+Started GET "/assets/scaffolds-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-07 20:39:52 -0600
+
+
+Started GET "/assets/landing_page-b832123416ca9a7d574b9b8c408c21a0.css?body=1" for ::1 at 2015-03-07 20:39:53 -0600
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-07 20:39:53 -0600
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-07 20:39:53 -0600
+
+
+Started GET "/assets/semantic-ui/dist/semantic-2225e3890a432fee03c0bba107a915cf.js?body=1" for ::1 at 2015-03-07 20:39:53 -0600
+
+
+Started GET "/assets/home_page-e488d72b58d8714efdb96dc0c5df92d0.js?body=1" for ::1 at 2015-03-07 20:39:53 -0600
+
+
+Started GET "/assets/landing_page-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-07 20:39:53 -0600
+
+
+Started GET "/assets/preferences-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-07 20:39:53 -0600
+
+
+Started GET "/assets/application-212ff86da9d5dc335166f061d3bdfff5.js?body=1" for ::1 at 2015-03-07 20:39:53 -0600
+
+
+Started GET "/assets/semantic-ui/dist/themes/default/assets/fonts/icons.woff2" for ::1 at 2015-03-07 20:39:53 -0600
+
+
+Started GET "/" for ::1 at 2015-03-07 20:40:04 -0600
+Processing by LandingPageController#index as HTML
+  Rendered landing_page/index.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 118ms (Views: 117.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-07 20:40:04 -0600
+
+
+Started GET "/assets/semantic-ui/dist/semantic-fbe90e8c72a89e58e21376aa5b35f9b2.css?body=1" for ::1 at 2015-03-07 20:40:04 -0600
+
+
+Started GET "/assets/landing_page-b832123416ca9a7d574b9b8c408c21a0.css?body=1" for ::1 at 2015-03-07 20:40:04 -0600
+
+
+Started GET "/assets/application-3ce948944461f0a8a3f8060b888f10c3.css?body=1" for ::1 at 2015-03-07 20:40:04 -0600
+
+
+Started GET "/assets/preferences-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-07 20:40:04 -0600
+
+
+Started GET "/assets/scaffolds-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-07 20:40:05 -0600
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-07 20:40:05 -0600
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-07 20:40:05 -0600
+
+
+Started GET "/assets/semantic-ui/dist/semantic-2225e3890a432fee03c0bba107a915cf.js?body=1" for ::1 at 2015-03-07 20:40:05 -0600
+
+
+Started GET "/assets/home_page-e488d72b58d8714efdb96dc0c5df92d0.js?body=1" for ::1 at 2015-03-07 20:40:05 -0600
+
+
+Started GET "/assets/landing_page-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-07 20:40:05 -0600
+
+
+Started GET "/assets/preferences-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-07 20:40:05 -0600
+
+
+Started GET "/assets/application-212ff86da9d5dc335166f061d3bdfff5.js?body=1" for ::1 at 2015-03-07 20:40:05 -0600
+
+
+Started GET "/assets/semantic-ui/dist/themes/default/assets/fonts/icons.woff2" for ::1 at 2015-03-07 20:40:05 -0600
+
+
+Started GET "/" for ::1 at 2015-03-07 21:09:11 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (82.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by LandingPageController#index as HTML
+  Rendered landing_page/index.html.haml within layouts/application (40.9ms)
+Completed 500 Internal Server Error in 422ms
+
+ActionView::Template::Error (couldn't find file 'semantic-ui'
+  (in /Users/neto/Developer/hack/micdmx/app/assets/javascripts/application.js:16)):
+    15:     = favicon_link_tag 'apple-touch-icon-72x72-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png', :sizes => '72x72'
+    16:     = favicon_link_tag 'apple-touch-icon-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png'
+    17:     = favicon_link_tag 'favicon.ico', :rel => 'shortcut icon'
+    18:     = javascript_include_tag "application"
+    19: 
+    20: 
+    21:   %body
+  app/views/layouts/application.html.haml:18:in `_app_views_layouts_application_html_haml___3809666049409850318_70307226409440'
+
+
+  Rendered /Users/neto/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.5ms)
+  Rendered /Users/neto/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /Users/neto/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/neto/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (29.0ms)
+  Rendered /Users/neto/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/_markup.html (0.4ms)
+  Rendered /Users/neto/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/style.css within layouts/inlined_string (0.5ms)
+  Rendered /Users/neto/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.4ms)
+  Rendered /Users/neto/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (0.5ms)
+  Rendered /Users/neto/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/console.js within layouts/javascript (18.8ms)
+  Rendered /Users/neto/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/main.js within layouts/javascript (0.3ms)
+  Rendered /Users/neto/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/error_page.js within layouts/javascript (0.4ms)
+  Rendered /Users/neto/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/index.html (39.3ms)
+
+
+Started GET "/" for ::1 at 2015-03-07 21:09:13 -0600
+Processing by LandingPageController#index as HTML
+  Rendered landing_page/index.html.haml within layouts/application (0.1ms)
+Completed 500 Internal Server Error in 147ms
+
+ActionView::Template::Error (couldn't find file 'semantic-ui'
+  (in /Users/neto/Developer/hack/micdmx/app/assets/javascripts/application.js:16)):
+    15:     = favicon_link_tag 'apple-touch-icon-72x72-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png', :sizes => '72x72'
+    16:     = favicon_link_tag 'apple-touch-icon-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png'
+    17:     = favicon_link_tag 'favicon.ico', :rel => 'shortcut icon'
+    18:     = javascript_include_tag "application"
+    19: 
+    20: 
+    21:   %body
+  app/views/layouts/application.html.haml:18:in `_app_views_layouts_application_html_haml___3809666049409850318_70307226409440'
+
+
+  Rendered /Users/neto/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.7ms)
+  Rendered /Users/neto/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered /Users/neto/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/neto/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (30.1ms)
+  Rendered /Users/neto/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/_markup.html (0.4ms)
+  Rendered /Users/neto/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/style.css within layouts/inlined_string (0.5ms)
+  Rendered /Users/neto/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.5ms)
+  Rendered /Users/neto/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (0.3ms)
+  Rendered /Users/neto/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/console.js within layouts/javascript (18.9ms)
+  Rendered /Users/neto/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/main.js within layouts/javascript (0.4ms)
+  Rendered /Users/neto/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/error_page.js within layouts/javascript (0.5ms)
+  Rendered /Users/neto/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/index.html (39.6ms)
+
+
+Started GET "/" for ::1 at 2015-03-07 21:09:52 -0600
+Processing by LandingPageController#index as HTML
+  Rendered landing_page/index.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 804ms (Views: 804.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome-74619dc948ed22c8c73f8a012bc352b1.css?body=1" for ::1 at 2015-03-07 21:09:53 -0600
+
+
+Started GET "/assets/bootstrap_and_overrides-990faa993cf02a385a157284f507e437.css?body=1" for ::1 at 2015-03-07 21:09:53 -0600
+
+
+Started GET "/assets/preferences-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-07 21:09:54 -0600
+
+
+Started GET "/assets/landing_page-b832123416ca9a7d574b9b8c408c21a0.css?body=1" for ::1 at 2015-03-07 21:09:54 -0600
+
+
+Started GET "/assets/custom-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-07 21:09:54 -0600
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap-3d4ac324e8c8a16c343c471da829ffcc.css?body=1" for ::1 at 2015-03-07 21:09:54 -0600
+
+
+Started GET "/assets/scaffolds-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-07 21:09:54 -0600
+
+
+Started GET "/assets/application-57ebcbbb94ee8fe5f1a4f1f9ece63b25.css?body=1" for ::1 at 2015-03-07 21:09:54 -0600
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-07 21:09:54 -0600
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-07 21:09:54 -0600
+
+
+Started GET "/assets/twitter/bootstrap/transition-49c071d4d736acca69daed5bd6c4fdbd.js?body=1" for ::1 at 2015-03-07 21:09:54 -0600
+
+
+Started GET "/assets/twitter/bootstrap/alert-4fa131fff2ae05a1d89df662cd4a8531.js?body=1" for ::1 at 2015-03-07 21:09:54 -0600
+
+
+Started GET "/assets/twitter/bootstrap/modal-d403efa7333c333fdeecc5daa727c437.js?body=1" for ::1 at 2015-03-07 21:09:54 -0600
+
+
+Started GET "/assets/twitter/bootstrap/dropdown-89b3696cc302eaf377aca640fae08632.js?body=1" for ::1 at 2015-03-07 21:09:55 -0600
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy-f3a0e91892e9edb7ccced4ed84ff23ec.js?body=1" for ::1 at 2015-03-07 21:09:55 -0600
+
+
+Started GET "/assets/twitter/bootstrap/tab-fab339701c02e2cb7d02570dd26fcf10.js?body=1" for ::1 at 2015-03-07 21:09:55 -0600
+
+
+Started GET "/assets/twitter/bootstrap/tooltip-1727c885f6618bb619e6a29ef0496d11.js?body=1" for ::1 at 2015-03-07 21:09:55 -0600
+
+
+Started GET "/assets/twitter/bootstrap/popover-c19ae92999a32fa658ffe5d5cc13d195.js?body=1" for ::1 at 2015-03-07 21:09:55 -0600
+
+
+Started GET "/assets/twitter/bootstrap/button-dcd83af4b8aa46a9026dec4ea360a003.js?body=1" for ::1 at 2015-03-07 21:09:55 -0600
+
+
+Started GET "/assets/twitter/bootstrap/collapse-cfd6f6e5cff9c41e78cc52464a71358b.js?body=1" for ::1 at 2015-03-07 21:09:55 -0600
+
+
+Started GET "/assets/twitter/bootstrap/carousel-ac6115504ba6a31f58406c5978a6aa20.js?body=1" for ::1 at 2015-03-07 21:09:55 -0600
+
+
+Started GET "/assets/twitter/bootstrap/affix-745457a96802e8f61e15a7622b54b68f.js?body=1" for ::1 at 2015-03-07 21:09:55 -0600
+
+
+Started GET "/assets/twitter/bootstrap-4a7c8463ef111cbe52eec5efe89f8319.js?body=1" for ::1 at 2015-03-07 21:09:55 -0600
+
+
+Started GET "/assets/home_page-e488d72b58d8714efdb96dc0c5df92d0.js?body=1" for ::1 at 2015-03-07 21:09:56 -0600
+
+
+Started GET "/assets/bootstrap-91416daf9f05a6e9ca13ef54aa8dcb39.js?body=1" for ::1 at 2015-03-07 21:09:56 -0600
+
+
+Started GET "/assets/landing_page-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-07 21:09:56 -0600
+
+
+Started GET "/assets/preferences-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-07 21:09:56 -0600
+
+
+Started GET "/assets/application-691bc9109ae1259a52df2e885bbafc8e.js?body=1" for ::1 at 2015-03-07 21:09:56 -0600
+
+
+Started GET "/images/favicon.ico" for ::1 at 2015-03-07 21:09:56 -0600
+
+ActionController::RoutingError (No route matches [GET] "/images/favicon.ico"):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.1) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/neto/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/neto/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/neto/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/neto/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/neto/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.7ms)
+  Rendered /Users/neto/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.0ms)
+  Rendered /Users/neto/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/neto/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (41.1ms)
+  Rendered /Users/neto/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/_markup.html (0.3ms)
+  Rendered /Users/neto/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/style.css within layouts/inlined_string (0.4ms)
+  Rendered /Users/neto/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.4ms)
+  Rendered /Users/neto/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (0.3ms)
+  Rendered /Users/neto/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/console.js within layouts/javascript (18.7ms)
+  Rendered /Users/neto/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/main.js within layouts/javascript (0.3ms)
+  Rendered /Users/neto/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/error_page.js within layouts/javascript (0.4ms)
+  Rendered /Users/neto/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/index.html (36.9ms)
+
+
+Started GET "/preferences" for ::1 at 2015-03-07 21:10:19 -0600
+Processing by PreferencesController#index as HTML
+  [1m[35mPreference Load (83.4ms)[0m  SELECT "preferences".* FROM "preferences"
+  Rendered preferences/index.html.haml within layouts/application (365.8ms)
+Completed 200 OK in 637ms (Views: 289.6ms | ActiveRecord: 345.1ms)
+
+
+Started GET "/preferences/1" for ::1 at 2015-03-07 21:10:23 -0600
+Processing by PreferencesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPreference Load (81.9ms)[0m  [1mSELECT  "preferences".* FROM "preferences" WHERE "preferences"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered preferences/show.html.haml within layouts/application (3.5ms)
+Completed 200 OK in 528ms (Views: 263.6ms | ActiveRecord: 170.9ms)
+
+
+Started GET "/preferences" for ::1 at 2015-03-07 21:10:25 -0600
+Processing by PreferencesController#index as HTML
+  [1m[35mPreference Load (83.9ms)[0m  SELECT "preferences".* FROM "preferences"
+  Rendered preferences/index.html.haml within layouts/application (88.1ms)
+Completed 200 OK in 353ms (Views: 268.4ms | ActiveRecord: 83.9ms)
+
+
+Started GET "/path1" for ::1 at 2015-03-07 21:10:26 -0600
+
+ActionController::RoutingError (No route matches [GET] "/path1"):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.1) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/neto/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/neto/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/neto/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/neto/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/neto/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.3ms)
+  Rendered /Users/neto/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendered /Users/neto/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/neto/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (35.2ms)
+  Rendered /Users/neto/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/_markup.html (0.3ms)
+  Rendered /Users/neto/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/style.css within layouts/inlined_string (0.3ms)
+  Rendered /Users/neto/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.4ms)
+  Rendered /Users/neto/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (0.4ms)
+  Rendered /Users/neto/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/console.js within layouts/javascript (18.7ms)
+  Rendered /Users/neto/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/main.js within layouts/javascript (0.3ms)
+  Rendered /Users/neto/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/error_page.js within layouts/javascript (0.4ms)
+  Rendered /Users/neto/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/web-console-2.1.1/lib/web_console/templates/index.html (38.2ms)
