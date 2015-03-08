@@ -6,18 +6,12 @@ class OmniauthCallbacksController < Devise::OmniauthCallbacksController
     if @user.persisted?
       print request.env['omniauth.auth']['extra']['raw_info'].to_yaml
       raw_info = request.env['omniauth.auth']['extra']['raw_info']
-      raw_info['first_name'] || = ''
-      raw_info['first_name'] ||= ''
-      raw_info['birthday'] ||= DataTime.now.to_date.strftime('%m/%d/%Y')
-      raw_info['gender'] ||= 'undefined'
-      raw_info['email'] ||= ''
 
-
-      @user.first_name = raw_info['first_name']
-      @user.last_name = raw_info['last_name']
-      @user.birthday = Date.strptime(raw_info['birthday'], '%m/%d/%Y')
-      @user.gender = raw_info['gender']
-      @user.email = raw_info['email']
+      @user.first_name = raw_info['first_name'] ? raw_info['first_name'] : ''
+      @user.last_name = raw_info['last_name'] ? raw_info['last_name'] : ''
+      @user.birthday = raw_info['birthday'] ? Date.strptime(raw_info['birthday'], '%m/%d/%Y') : DataTime.now.to_date.strftime('%m/%d/%Y')
+      @user.gender = raw_info['gender'] ? raw_info['gender'] : ''
+      @user.email = raw_info['email'] ? raw_info['email'] : ''
 
       sign_in_and_redirect @user, :event => :authentication #this will throw if @user is not activated
       set_flash_message(:notice, :success, :kind => 'Facebook') if is_navigational_format?
