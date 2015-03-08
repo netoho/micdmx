@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   devise_for :users, :controllers => {:omniauth_callbacks => "omniauth_callbacks"}
 
   # resources
+  resources :project_types
   resources :preferences
   resources :profiles
   resources :statuses

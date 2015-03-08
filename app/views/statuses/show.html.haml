@@ -7,9 +7,9 @@
   %br
   = @status.name
 %p
-  %strong= model_class.human_attribute_name(:type) + ':'
+  %strong= model_class.human_attribute_name(:status_type) + ':'
   %br
-  = @status.type
+  = @status.status_type
 
 
 = link_to t('.back', :default => t("helpers.links.back")), statuses_path, :class => 'btn btn-default'
