@@ -1,5 +1,83 @@
-.two.column.row
-  .column
-    %p kpasdkaposd
-  .column
-    %p netooooo
+.ui.vertical.segment
+  .ui.stackable.center.aligned.page.grid
+    .ui.centered.page.grid
+      .row
+        .column.center.aligned
+          %h1.ui.header
+            Inicia sesión 
+  .fourteen.wide.column
+    .ui.three.column.center.aligned.stackable.divided.grid
+      .column
+        .ui.icon.header
+          %a.ui.button{:href => "#"}
+            %i.facebook.icon
+            Iniciar sesión
+      .column
+        .ui.icon.header
+          %a.ui.button{:href => "#"}
+            %i.twitter.icon
+            Iniciar sesión
+      .column
+        .ui.icon.header
+          .ui.icon.header
+          %a.ui.button{:href => "#"}
+            %i.foursquare.icon
+            Iniciar sesión
+.ui.vertical.feature.segment
+  .ui.centered.page.grid
+    .fourteen.wide.column
+      .ui.three.column.center.aligned.stackable.divided.grid
+        .column
+          .ui.icon.header
+            %i.announcement.icon
+            Haz tu propuesta
+          %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, deserunt iure.
+          %p
+            %a.ui.button{:href => "#"}
+              Proponer
+        .column
+          .ui.icon.header
+            %i.configure.icon
+            ¡Colabora!
+          %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, deserunt iure.
+          %p
+            %a.ui.button{:href => "#"}
+              Colaborar
+        .column
+          .ui.icon.header
+            %i.bar.chart.icon
+            Infórmate
+          %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, deserunt iure.
+          %p
+            %a.ui.button{:href => "#"}
+              Informarme
+.ui.inverted.footer.vertical.segment
+  .ui.stackable.center.aligned.page.grid
+    .ten.wide.column
+      .ui.three.column.center.aligned.stackable.grid
+        .column
+          %h5.ui.inverted.header Colaboraciones
+          .ui.inverted.link.list
+            %a.item Top 10
+            %a.item Por delegación
+            %a.item Por tema
+        .column
+          %h5.ui.inverted.header Comunidad
+          .ui.inverted.link.list
+            %a.item A-Z
+            %a.item Top 10
+            %a.item Recientes
+        .column
+          %h5.ui.inverted.header Informes
+          .ui.inverted.link.list
+            %a.item Estadísticas
+            %a.item El D.F. en gráficos
+            %a.item Aviso de privacidad
+    .six.wide.column
+      %h5.ui.inverted.header Contacto
+      %addr
+        123 Silicon Valley
+        %br
+          Milton Keynes, London
+          %br
+      %p (404) 867-5309
