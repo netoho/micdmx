@@ -39,6 +39,9 @@ gem 'pg', '0.18.1'
 # bootstrap integration
 gem "twitter-bootstrap-rails"
 
+# facebook login
+gem 'omniauth-facebook'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
