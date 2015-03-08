@@ -16,10 +16,12 @@
     = favicon_link_tag 'apple-touch-icon-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png'
     = favicon_link_tag 'favicon.ico', :rel => 'shortcut icon'
     = javascript_include_tag "application"
-
+    %script{:src => "https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.js"}
+    %link{:href => "https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.css", :rel => "stylesheet"}
 
   %body
     #page-container
       =render 'shared/menu'
-      =yield
+      .container#content
+        =yield
       =render 'shared/footer'

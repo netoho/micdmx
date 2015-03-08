@@ -1,2 +1,31 @@
-%h1 Home#index
-%p Find me in app/views/home/index.html.haml
+%section.site-section.site-section-light.site-section-top
+  .container
+    %h1.text-center.animation-slideDown
+      %strong COLABORACIONES
+    %h2.h3.text-center.animation-slideUp Mejora tu ciudad!
+%iframe{:frameBorder => "0", :height => "500px", :src => "https://a.tiles.mapbox.com/v4/markintosh.lde27jn7/attribution,zoompan,zoomwheel,geocoder,share.html?access_token=pk.eyJ1IjoibWFya2ludG9zaCIsImEiOiI2ZHZzd29ZIn0.uMh1aeT5JN6hd9cNrheb-w", :width => "100%"}
+%section.site-content.site-section
+  .container
+    .row
+      %h2 Destacadas
+  .row.portfolio
+    .col-sm-3.portfolio-item.animation-fadeInQuick{"data-category" => "design"}
+      %a{:href => ""}
+        %img.img-responsive{:alt => "Image", :src => asset_path("img/placeholders/photos/photo1.jpg")}
+          %span.portfolio-item-info
+            %strong Colaboración #1
+    .col-sm-3.portfolio-item.animation-fadeInQuick{"data-category" => "logo"}
+      %a{:href => ""}
+        %img.img-responsive{:alt => "Image", :src => asset_path("img/placeholders/photos/photo2.jpg")}
+          %span.portfolio-item-info
+            %strong Colaboración #2
+    .col-sm-3.portfolio-item.animation-fadeInQuick{"data-category" => "logo"}
+      %a{:href => ""}
+        %img.img-responsive{:alt => "Image", :src => asset_path("img/placeholders/photos/photo3.jpg")}
+          %span.portfolio-item-info
+            %strong Colaboración #3
+    .col-sm-3.portfolio-item.animation-fadeInQuick{"data-category" => "design"}
+      %a{:href => ""}
+        %img.img-responsive{:alt => "Image", :src => asset_path("img/placeholders/photos/photo2.jpg")}
+          %span.portfolio-item-info
+            %strong Colaboración #4
