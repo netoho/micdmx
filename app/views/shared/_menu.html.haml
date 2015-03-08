@@ -1,6 +1,6 @@
 %header
   .container
-    %a.site-logo
+    =link_to root_path, class: "site-logo" do
       %img{:src => asset_path('img/placeholders/screenshots/logocd1.png'), :alt => "", :size=> "150x50"}
     %nav
       %a.btn.btn-default.site-menu-toggle.visible-xs.visible-sm
@@ -9,13 +9,10 @@
         %li.visible-xs.visible-sm
           %a.site-menu-toggle.text-center
             %i.fa.fa-times
-        %li.active
-          %a.site-nav-sub
-            %i.fa.fa-angle-down.site-nav-arrow>
-            Iniciar Sesión
-          %ul
-            %li
-              - if current_user
-                = link_to "Salir", destroy_user_session_path, method: :delete
-              - else
-                = link_to "Facebook", user_omniauth_authorize_path(:facebook)
+        %li.facebook-btn
+          - if current_user
+            = link_to "Salir", destroy_user_session_path, method: :delete, class: "site-nav-sub"
+          - else
+            = link_to user_omniauth_authorize_path(:facebook) do
+              %i.si.si-facebook
+              Iniciar sesión
