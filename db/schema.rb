@@ -11,10 +11,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150308123157) do
+ActiveRecord::Schema.define(version: 20150308141347) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "colonia", primary_key: "idcolonia", force: :cascade do |t|
+    t.string "nombre",        limit: 80
+    t.string "codigo_postal"
+  end
 
   create_table "expert_reviews", force: :cascade do |t|
     t.string   "message",    limit: 120
@@ -36,6 +41,10 @@ ActiveRecord::Schema.define(version: 20150308123157) do
   create_table "expertices", force: :cascade do |t|
     t.string  "name",          limit: 40
     t.integer "preference_id",            null: false
+  end
+
+  create_table "municipio", primary_key: "idmunicipio", force: :cascade do |t|
+    t.string "nombre", limit: 120
   end
 
   create_table "patterns", force: :cascade do |t|
@@ -89,15 +98,22 @@ ActiveRecord::Schema.define(version: 20150308123157) do
     t.integer "type"
   end
 
+  create_table "tables", force: :cascade do |t|
+    t.string   "name"
+    t.integer  "type"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "users", force: :cascade do |t|
     t.string   "first_name",             limit: 30
     t.string   "last_name",              limit: 40
     t.string   "address",                limit: 400
-    t.string   "sex",                    limit: 30
+    t.string   "gender",                 limit: 30
     t.string   "facebook",               limit: 40
     t.string   "twitter",                limit: 40
     t.string   "zip",                    limit: 10
-    t.datetime "birthday"
+    t.date     "birthday"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "status_id",                                       null: false
