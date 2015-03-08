@@ -1,83 +1,51 @@
-.ui.vertical.segment
-  .ui.stackable.center.aligned.page.grid
-    .ui.centered.page.grid
-      .row
-        .column.center.aligned
-          %h1.ui.header
-            Inicia sesión 
-  .fourteen.wide.column
-    .ui.three.column.center.aligned.stackable.divided.grid
-      .column
-        .ui.icon.header
-          %a.ui.button{:href => "#"}
-            %i.facebook.icon
-            Iniciar sesión
-      .column
-        .ui.icon.header
-          %a.ui.button{:href => "#"}
-            %i.twitter.icon
-            Iniciar sesión
-      .column
-        .ui.icon.header
-          .ui.icon.header
-          %a.ui.button{:href => "#"}
-            %i.foursquare.icon
-            Iniciar sesión
-.ui.vertical.feature.segment
-  .ui.centered.page.grid
-    .fourteen.wide.column
-      .ui.three.column.center.aligned.stackable.divided.grid
-        .column
-          .ui.icon.header
-            %i.announcement.icon
-            Haz tu propuesta
-          %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, deserunt iure.
-          %p
-            %a.ui.button{:href => "#"}
-              Proponer
-        .column
-          .ui.icon.header
-            %i.configure.icon
-            ¡Colabora!
-          %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, deserunt iure.
-          %p
-            %a.ui.button{:href => "#"}
-              Colaborar
-        .column
-          .ui.icon.header
-            %i.bar.chart.icon
-            Infórmate
-          %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, deserunt iure.
-          %p
-            %a.ui.button{:href => "#"}
-              Informarme
-.ui.inverted.footer.vertical.segment
-  .ui.stackable.center.aligned.page.grid
-    .ten.wide.column
-      .ui.three.column.center.aligned.stackable.grid
-        .column
-          %h5.ui.inverted.header Colaboraciones
-          .ui.inverted.link.list
-            %a.item Top 10
-            %a.item Por delegación
-            %a.item Por tema
-        .column
-          %h5.ui.inverted.header Comunidad
-          .ui.inverted.link.list
-            %a.item A-Z
-            %a.item Top 10
-            %a.item Recientes
-        .column
-          %h5.ui.inverted.header Informes
-          .ui.inverted.link.list
-            %a.item Estadísticas
-            %a.item El D.F. en gráficos
-            %a.item Aviso de privacidad
-    .six.wide.column
-      %h5.ui.inverted.header Contacto
-      %addr
-        123 Silicon Valley
-        %br
-          Milton Keynes, London
-          %br
-      %p (404) 867-5309
+%section.site-section.site-section-light.site-section-top.parallax-image{:style => "background-image: url('img/placeholders/parallax/photo1.jpg');"}
+  .container
+    %h1.text-center.animation-slideDown.hidden-xs
+      %strong Forma parte de la comunidad MiCDMX
+    %h2.text-center.animation-slideUp.push.hidden-xs Ayuda a mejorar los espacios públicos, calles, colonias y tu ciudad.
+  .row
+    .col-md-4.col-md-offset-4.text-center.push
+      =link_to(root_path, class: "colab-button btn btn-lg btn-warning") do
+        COLABORAR
+
+%section.site-content.site-section.site-slide-content
+  .container
+    .row
+      .col-sm-6.site-block.visibility-none{"data-animation-class" => "animation-fadeInRight", "data-element-offset" => "-180", "data-toggle" => "animation-appear"}
+        %img.img-responsive{:alt => "Promo #1", :src => "img/placeholders/screenshots/paso1.png"}
+      .col-sm-6.col-md-5.col-md-offset-1.site-block.visibility-none{"data-animation-class" => "animation-fadeInLeft", "data-element-offset" => "-180", "data-toggle" => "animation-appear"}
+        %h3.h2.site-heading.site-heading-promo
+          %strong Haz una 
+          Propuesta
+        %p.promo-content
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos accusantium esse facilis aut impedit ex magnam, iste quo voluptate quibusdam est eaque hic porro consequuntur quae fuga. Quis, dolor libero.
+
+%section.site-content.site-section.parallax-image{:style => "background-image: url('img/placeholders/parallax/photo2.jpg');"}
+  .container
+    %h3.titulo-logo
+%section.site-content.site-section.site-slide-content
+  .container
+    .row
+      .col-sm-6.col-md-5.site-block.visibility-none{"data-animation-class" => "animation-fadeInRight", "data-element-offset" => "-180", "data-toggle" => "animation-appear"}
+        %h3.h2.site-heading.site-heading-promo
+          %strong Mejora
+          tu ciudad
+        %p.promo-content
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur ad vitae provident odit quam numquam repellendus. Hic aperiam quae, nobis dolore minima tenetur, dicta temporibus distinctio dolorum dolor fuga ullam.
+          %a{:href => "features.html"} Learn More..
+      .col-sm-6.col-md-offset-1.site-block.visibility-none{"data-animation-class" => "animation-fadeInLeft", "data-element-offset" => "-180", "data-toggle" => "animation-appear"}
+        %img.img-responsive{:alt => "Promo #2", :src => "img/placeholders/screenshots/paso2.png"}
+%section.site-content.site-section.site-section-light.parallax-image{:style => "background-image: url('img/placeholders/parallax/photo3.jpg');"}
+  .container
+    %h3.site-heading.text-center.titulo-logo
+      %img.hidden{:src => 'img/placeholders/screenshots/logocd1.png', :alt => "", :size=> "150x50"}
+%section.site-content.site-section.site-slide-content
+  .container
+    .row
+      .col-sm-6.site-block.visibility-none{"data-animation-class" => "animation-fadeInRight", "data-element-offset" => "-180", "data-toggle" => "animation-appear"}
+        %img.img-responsive{:alt => "Promo #3", :src => "img/placeholders/screenshots/paso3.png"}
+      .col-sm-6.col-md-5.col-md-offset-1.site-block.visibility-none{"data-animation-class" => "animation-fadeInLeft", "data-element-offset" => "-180", "data-toggle" => "animation-appear"}
+        %h3.h2.site-heading.site-heading-promo
+          %strong Infórmate
+        %p.promo-content
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque numquam velit esse repudiandae autem maiores sint recusandae. Veritatis dolor ratione molestias, odio saepe error. Obcaecati nemo eius magni praesentium tenetur.
