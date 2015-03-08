@@ -1,0 +1,24 @@
+%header
+  .container
+    %nav
+      =link_to root_path, class: "site-logo" do
+        %img{:src => asset_path('img/placeholders/screenshots/logocd1.png'), :alt => "", :size=> "150x50"}
+      %a.btn.btn-default.site-menu-toggle.visible-xs.visible-sm
+        %i.fa.fa-bars
+      %ul.site-nav
+        %li.visible-xs.visible-sm
+          %a.site-menu-toggle.text-center
+            %i.fa.fa-times
+        %li.facebook-btn.pull-right
+          - if current_user
+            = link_to "Salir", destroy_user_session_path, method: :delete, class: "site-nav-sub"
+          - else
+            = link_to user_omniauth_authorize_path(:facebook) do
+              %i.si.si-facebook
+              Iniciar sesión
+        %li.col-md-8.pull-right
+          .input-group
+            %input.form-control{:placeholder => "Buscar..", :type => "text"}
+              .input-group-btn
+                %button.btn.btn-primary{:type => "submit"}
+                  %i.fa.fa-search

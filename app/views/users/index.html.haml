@@ -16,7 +16,7 @@
             %br
               %small Web Designer
         .widget-main
-          %a.widget-image-container.animation-hatch{:href => "page_ready_user_profile.php"}
+          =link_to user, class: "widget-image-container animation-hatch" do
             =image_tag(user.image, class: "widget-image img-circle")
           .row.text-center.animation-fadeIn
             .col-xs-4
