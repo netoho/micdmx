@@ -42,6 +42,9 @@ gem "twitter-bootstrap-rails"
 # facebook login
 gem 'omniauth-facebook'
 
+#visualize table views
+gem 'table_print'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
