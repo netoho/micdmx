@@ -4,7 +4,7 @@ class ProfilesController < ApplicationController
   # GET /profile1s
   # GET /profile1s.json
   def index
-    @profile1s = Profile1.all
+    @profiles = Profile.all
   end
 
   # GET /profile1s/1
@@ -14,7 +14,7 @@ class ProfilesController < ApplicationController
 
   # GET /profile1s/new
   def new
-    @profile1 = Profile1.new
+    @profile = Profile.new
   end
 
   # GET /profile1s/1/edit
@@ -24,15 +24,15 @@ class ProfilesController < ApplicationController
   # POST /profile1s
   # POST /profile1s.json
   def create
-    @profile1 = Profile1.new(profile1_params)
+    @profile = Profile.new(profile_params)
 
     respond_to do |format|
-      if @profile1.save
-        format.html { redirect_to @profile1, notice: 'Profile1 was successfully created.' }
-        format.json { render :show, status: :created, location: @profile1 }
+      if @profile.save
+        format.html { redirect_to @profile, notice: 'Profile was successfully created.' }
+        format.json { render :show, status: :created, location: @profile }
       else
         format.html { render :new }
-        format.json { render json: @profile1.errors, status: :unprocessable_entity }
+        format.json { render json: @profile.errors, status: :unprocessable_entity }
       end
     end
   end
@@ -41,12 +41,12 @@ class ProfilesController < ApplicationController
   # PATCH/PUT /profile1s/1.json
   def update
     respond_to do |format|
-      if @profile1.update(profile1_params)
-        format.html { redirect_to @profile1, notice: 'Profile1 was successfully updated.' }
-        format.json { render :show, status: :ok, location: @profile1 }
+      if @profile.update(profile_params)
+        format.html { redirect_to @profile, notice: 'Profile was successfully updated.' }
+        format.json { render :show, status: :ok, location: @profile }
       else
         format.html { render :edit }
-        format.json { render json: @profile1.errors, status: :unprocessable_entity }
+        format.json { render json: @profile.errors, status: :unprocessable_entity }
       end
     end
   end
@@ -54,9 +54,9 @@ class ProfilesController < ApplicationController
   # DELETE /profile1s/1
   # DELETE /profile1s/1.json
   def destroy
-    @profile1.destroy
+    @profile.destroy
     respond_to do |format|
-      format.html { redirect_to profile1s_url, notice: 'Profile1 was successfully destroyed.' }
+      format.html { redirect_to profiles_url, notice: 'Profile was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
@@ -64,11 +64,11 @@ class ProfilesController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_profile1
-      @profile1 = Profile1.find(params[:id])
+      @profile = Profile.find(params[:id])
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def profile1_params
-      params.require(:profile1).permit(:profile)
+      params.require(:profile).permit(:profile)
     end
 end

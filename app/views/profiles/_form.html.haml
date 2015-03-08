@@ -1,8 +1,8 @@
-= form_for @profile1, html: { class: "form form-horizontal profile1" } do |f|
+= form_for @profile, html: { class: "form form-horizontal profile1" } do |f|
   .form-group
     = f.label :profile, class: 'control-label'
     .controls
       = f.text_field :profile, class: 'form-control', required: true
-    = error_span(@profile1[:profile])
+    = error_span(@profile[:profile])
   = f.submit nil,class: 'btn btn-primary'
-  = link_to t('.cancel', :default => t("helpers.links.cancel")), profile1s_path, :class => 'btn btn-default'
+  = link_to t('.cancel', :default => t("helpers.links.cancel")), profiles_path, :class => 'btn btn-default'
