@@ -54,5 +54,10 @@
     .controls
       = f.text_field :image, class: 'form-control', required: true
     = error_span(@user[:image])
+  .form-group
+    = f.label :preferences, class: 'control-label'
+    .controls
+      = f.collection_select :preference_ids, Preference.all, :id, :name, {}, {class: 'form-control mymultiple', multiple: 'multiple'}
+    = error_span(@user[:preferences])
   = f.submit nil,class: 'btn btn-primary'
   = link_to t('.cancel', :default => t("helpers.links.cancel")), users_path, :class => 'btn btn-default'
